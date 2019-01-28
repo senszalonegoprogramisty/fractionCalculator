@@ -127,4 +127,35 @@ public class Fraction {
     public int hashCode() {
         return Objects.hash(numerator, denominator);
     }
+
+
+
+    public void GCF() {
+        int n = this.numerator; //5
+        int d = this.denominator; //10
+        int reminder;
+
+        while (n != 0 && d != 0) {
+            reminder = n%d;
+            n = d;
+            d = reminder;
+        }
+        System.out.println(n);
+    }
+
+    public static int GCD(int a, int b) {
+        if (b == 0)
+            return a;
+        else
+            return GCD(b, a%b);
+    }
 }
+/*
+    GCF greatest common factor
+
+    while a and b are not zero
+    find the remainder of a divided by b
+    set a to b
+    set b to the remainder you found
+    return a
+     */

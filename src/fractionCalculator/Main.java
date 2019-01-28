@@ -7,6 +7,7 @@ public class Main {
         Fraction f3 = new Fraction(5,10);
         Fraction f4 = new Fraction(1,2);
         Fraction f5 = new Fraction(2,4);
+        Fraction test = new Fraction(32, 80);
 
         System.out.println(Fraction.add(f1,f2));
         Fraction sumOff1Andf2 = Fraction.add(f1, new Fraction(2,5));
@@ -32,5 +33,11 @@ public class Main {
         System.out.println("-------toDouble-------");
 
         System.out.println(f3.toDouble());
+
+        System.out.println("-------GCD-------");
+
+        System.out.println(Fraction.GCD(32, 80));
+
+        test.GCF();
     }
 }

@@ -53,7 +53,7 @@ public class Main {
         String fractionStr = input.next();
 
         while (!fractionStr.matches("-?\\d+/*(\\+?[1-9]\\d*)*")) {
-            System.out.print("Invalid fraction. Please enter (a/b) or (a): ");
+            System.out.print("Invalid fraction. Please enter a/b or a ");
             fractionStr = scanner.next();
         }
         if (fractionStr.contains("/")) {
@@ -106,10 +106,11 @@ public class Main {
         Fraction fraction1 = getFraction(scanner);
         System.out.println("Please enter fraction two");
         Fraction fraction2 = getFraction(scanner);
-
-        System.out.println("Are fractions equal? "+fraction1.equals(fraction2));
+        if (fraction1.equals(fraction2))
+            System.out.println("Fractions equal");
+        else
+            System.out.println("Fractions are not equal");
     }
-
 }
 
 /*

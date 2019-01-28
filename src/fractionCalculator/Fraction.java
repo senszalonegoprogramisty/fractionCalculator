@@ -136,6 +136,8 @@ public class Fraction {
             if ((a % i == 0) && (b % i == 0)) {
                 System.out.println("Simplest form is "+(a/i)+"/"+(b/i));
                 break;
+            } else {
+                System.out.println("Simplest form is "+a+"/"+b);
             }
         }
     }
@@ -168,4 +170,4 @@ public class Fraction {
     set a to b
     set b to the remainder you found
     return a
-     */
+*/

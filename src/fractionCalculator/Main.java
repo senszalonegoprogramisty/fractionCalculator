@@ -1,7 +1,7 @@
 package fractionCalculator;
 
 import java.util.Scanner;
-
+//TODO fix scanner so it wont prompt user for action twice, add toLowestTerms option, make leaving from program by both Q and q
 public class Main {
 
     private static Scanner scanner = new Scanner(System.in);

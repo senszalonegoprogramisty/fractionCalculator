@@ -140,8 +140,6 @@ public class Fraction {
         }
     }
 
-
-
     public void GCF() {
         int n = this.numerator; //5
         int d = this.denominator; //10

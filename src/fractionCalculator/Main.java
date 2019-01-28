@@ -5,9 +5,26 @@ import java.util.Scanner;
 public class Main {
 
     private static Scanner scanner = new Scanner(System.in);
-
+    private static Fraction fraction = new Fraction();
     public static void main(String[] args) {
 
+        System.out.println("This is fraction calculator, you can add, subtract, multiply and divide fractions.\n" +
+                "Please enter +, -, *, / or Q to quit");
+
+        String menu = scanner.nextLine();
+        boolean flag = true;
+
+        while (flag) {
+            switch (menu) {
+                case "Q":
+                    System.out.println("Quiting program");
+                    flag = false;
+                    break;
+                case "+":
+                    addFractions();
+                    break;
+            }
+        }
     }
 
     public static String getOperation(Scanner input) {
@@ -32,5 +49,9 @@ public class Main {
         // should re-prompt them until it is valid
 
         return null;
+    }
+
+    public static void addFractions() {
+        
     }
 }

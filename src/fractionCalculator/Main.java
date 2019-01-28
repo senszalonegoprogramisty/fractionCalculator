@@ -8,6 +8,7 @@ public class Main {
         Fraction f4 = new Fraction(1,2);
         Fraction f5 = new Fraction(2,4);
         Fraction test = new Fraction(32, 80);
+        Fraction f6 = new Fraction(8,16);
 
         System.out.println(Fraction.add(f1,f2));
         Fraction sumOff1Andf2 = Fraction.add(f1, new Fraction(2,5));
@@ -39,5 +40,9 @@ public class Main {
         System.out.println(Fraction.GCD(32, 80));
 
         test.GCF();
+
+        System.out.println("to lowest terms");
+
+        f6.toLowestTerms();
     }
 }

@@ -128,6 +128,18 @@ public class Fraction {
         return Objects.hash(numerator, denominator);
     }
 
+    public void toLowestTerms() {
+        int a = this.numerator;
+        int b = this.denominator;
+
+        for (int i = a; i > 0; i--) {
+            if ((a % i == 0) && (b % i == 0)) {
+                System.out.println("Simplest form is "+(a/i)+"/"+(b/i));
+                break;
+            }
+        }
+    }
+
 
 
     public void GCF() {
